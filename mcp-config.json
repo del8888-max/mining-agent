@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "mining-news-mcp": {
+      "command": "python",
+      "args": ["servers/mining_news_mcp/server.py"],
+      "description": "矿业新闻聚合 MCP Server — 搜索新闻、获取全文"
+    },
+    "mineral-pdf-mcp": {
+      "command": "python",
+      "args": ["servers/mineral_pdf_mcp/server.py"],
+      "description": "NI 43-101 储量数据抽取 MCP Server — PDF解析、资源量提取"
+    },
+    "lme-price-mcp": {
+      "command": "python",
+      "args": ["servers/lme_price_mcp/server.py"],
+      "description": "矿产价格行情 MCP Server — LME/上海价格、走势查询"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  agent:
+    build: .
+    container_name: mining-agent
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+    volumes:
+      - ./briefing_output.md:/app/briefing_output.md
+    stdin_open: true
+    tty: true
+    command: "${QUERY:-给我生成一份关于 Pilbara 锂矿的今日简报}"
